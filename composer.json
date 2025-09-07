@@ -1,0 +1,22 @@
+{
+    "name": "jeyroik/ihr-plugin-dates",
+    "description": "Repository plugin for 'I Have Repository' library for dates",
+    "require": {
+        "jeyroik/i-have-repository": "0.*",
+        "jeyroik/i-have-date": "0.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12",
+        "phpstan/phpstan": "0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "jeyroik\\": "src/",
+            "tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --testdox tests",
+        "stan": "vendor/bin/phpstan analyse -l 5 src"
+    }
+}
